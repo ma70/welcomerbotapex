@@ -113,7 +113,7 @@ function forEachObject(obj, func) {
 client.on("ready", () => {
     var guild;
     while (!guild)
-        guild = client.guilds.find("name", "اسم سرفرك هنا")
+        guild = client.guilds.find("name", "Heroku & Github Shop1")
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
@@ -122,7 +122,7 @@ client.on("ready", () => {
     })
 })
 client.on("guildMemberAdd", (member) => {
-    let channel = member.guild.channels.find('name', 'اسم روم اللي برسل فيها');
+    let channel = member.guild.channels.find('name', 'chat');
     if (!channel) {
         console.log("!channel fails");
         return;
@@ -133,7 +133,7 @@ client.on("guildMemberAdd", (member) => {
     console.log('made it till here!');
     var guild;
     while (!guild)
-        guild = client.guilds.find("name", "اسم سرفرك هنا")
+        guild = client.guilds.find("name", "Heroku & Github Shop1")
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
@@ -141,7 +141,7 @@ client.on("guildMemberAdd", (member) => {
                 if (dat[Inv] < Invite.uses) {
                     console.log(3);
                     console.log(`${member} joined over ${Invite.inviter}'s invite ${Invite.code}`)
- channel.send(` ♥ **تم دعوته من قبل ${Invite.inviter} ♥ `)            
+ channel.send(` :hearts: **تم دعوته من قبل ${Invite.inviter} :hearts: `)            
  }
             dat[Inv] = Invite.uses;
         })
