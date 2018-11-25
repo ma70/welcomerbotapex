@@ -146,6 +146,7 @@ client.on("guildMemberAdd", (member) => {
             dat[Inv] = Invite.uses;
         })
     })
+ });
 
     
 
