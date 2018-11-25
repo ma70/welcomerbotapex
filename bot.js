@@ -146,8 +146,8 @@ client.on("guildMemberAdd", (member) => {
             dat[Inv] = Invite.uses;
         })
     })
-});
+
     
 
 client.login(process.env.BOT_TOKEN);
-  
+ 
